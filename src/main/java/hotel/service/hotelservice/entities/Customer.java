@@ -3,9 +3,7 @@ package hotel.service.hotelservice.entities;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @Entity
@@ -13,7 +11,8 @@ import javax.persistence.Id;
 public class Customer {
 
     @Id
-    private long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     @Column(name = "firstname")
     private String firstName;
 
@@ -30,7 +29,7 @@ public class Customer {
     private String phone;
 
     @Column(name = "number_id")
-    private long roomId;
+    private int roomId;
 
 
 

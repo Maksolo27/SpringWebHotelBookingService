@@ -11,7 +11,7 @@ import javax.persistence.*;
 public class Room {
 
     @Id
-    private long number;
+    private int number;
 
     @Column
     private int persons;
