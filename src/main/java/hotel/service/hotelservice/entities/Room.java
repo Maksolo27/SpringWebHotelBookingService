@@ -1,13 +1,17 @@
 package hotel.service.hotelservice.entities;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 
 @Data
 @Entity
 @NoArgsConstructor
+@ToString
+@EqualsAndHashCode
 public class Room {
 
     @Id
@@ -31,9 +35,6 @@ public class Room {
 
     @Column
     private boolean booking;
-
-    @Column(name = "booking_time")
-    private int bookingTime;
 
     @Column
     private boolean inaccessible;

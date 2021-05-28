@@ -1,13 +1,17 @@
 package hotel.service.hotelservice.entities;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 
 @Data
 @Entity
 @NoArgsConstructor
+@EqualsAndHashCode
+@ToString
 public class Customer {
 
     @Id
@@ -30,6 +34,9 @@ public class Customer {
 
     @Column(name = "number_id")
     private int roomId;
+
+    @Column(name = "booking_time")
+    private int bookingTime;
 
 
 

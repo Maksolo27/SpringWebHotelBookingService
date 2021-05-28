@@ -1,0 +1,29 @@
+.rooms-in-line{
+    display:inline-block;
+}
+
+.room-button{
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 7px 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+#booked{
+    background-color: red;
+}
+
+#not-booked{
+    background-color: lightgreen;
+}
+
+#not-booked:hover{
+    background-color: green;
+}
+
+

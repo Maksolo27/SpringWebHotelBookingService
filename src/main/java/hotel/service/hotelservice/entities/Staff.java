@@ -2,13 +2,17 @@ package hotel.service.hotelservice.entities;
 
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 
 @Data
 @Entity
 @NoArgsConstructor
+@EqualsAndHashCode
+@ToString
 public class Staff {
 
     @Id
