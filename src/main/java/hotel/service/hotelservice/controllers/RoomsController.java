@@ -20,7 +20,6 @@ public class RoomsController {
     @GetMapping
     public String getRooms(Model model){
         List<Room> roomList = roomService.getAll();
-        System.out.println(roomList);
         model.addAttribute("roomList", roomList);
         return "rooms";
     }
