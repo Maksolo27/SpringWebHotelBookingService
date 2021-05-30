@@ -11,7 +11,7 @@
 
 <body>
     <div class="rooms-in-line" th:each="theRoom : ${roomList}">
-        <a th:href="@{'/booking?room=' + ${theRoom.getNumber()}}"><button class="room-button" th:if="${!theRoom.isBooking() && !theRoom.isInaccessible()}"  id="not-booked"></button></a>
+        <a th:href="@{'/booking?roomNumber=' + ${theRoom.getNumber()}}"><button class="room-button" th:if="${!theRoom.isBooking() && !theRoom.isInaccessible()}"  id="not-booked"></button></a>
         <button class="room-button" th:if="${theRoom.isBooking() || theRoom.isInaccessible()}" id="booked"></button>
     </div>
 

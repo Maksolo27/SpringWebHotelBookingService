@@ -27,9 +27,6 @@ public class Customer {
     private String login;
 
     @Column
-    private String password;
-
-    @Column
     private String phone;
 
     @Column(name = "number_id")
