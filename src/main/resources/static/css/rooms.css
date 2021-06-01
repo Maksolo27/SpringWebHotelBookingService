@@ -1,5 +1,6 @@
 .rooms-in-line{
     display:inline-block;
+    margin-left: 500px;
 }
 
 .room-button{
@@ -12,6 +13,13 @@
     display: inline-block;
     font-size: 14px;
     border-radius: 6px;
+    width: 40px;
+    height: 40px;
+}
+
+.room-type-heading{
+    font-size: 40px;
+    margin-left: 640px;
 }
 
 #booked{
@@ -26,4 +34,7 @@
     background-color: green;
 }
 
+#rooms-h{
+    margin-left: 650px;
+}
 

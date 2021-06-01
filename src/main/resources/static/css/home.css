@@ -17,11 +17,13 @@
 #title{
     font-size: 70px;
     margin-left: 30px;
+    font: normal small-caps 60px/70px fantasy;
 }
 
 #under-title{
     font-size: 50px;
     margin-left: 30px;
+    font: normal small-caps 35px/50px fantasy;
 }
 
 #under-title-image{
@@ -30,4 +32,23 @@
 }
 #first-panel{
     margin-left: 1200px;
+}
+
+.about-brand-text{
+    margin-left: 50px;
+    font-size: 17px;
+}
+
+.next-page-button{
+    margin-left: 650px;
+    font-weight: 700;
+    width: 200px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: #191919FF;
+    box-shadow: 0 -3px #191919FF inset;
+    transition: 0.2s;
 }

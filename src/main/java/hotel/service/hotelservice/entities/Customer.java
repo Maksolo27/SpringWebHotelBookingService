@@ -35,6 +35,4 @@ public class Customer {
     @Column(name = "booking_time")
     private int bookingTime;
 
-
-
 }

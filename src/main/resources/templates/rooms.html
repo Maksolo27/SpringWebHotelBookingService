@@ -5,14 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" th:href="@{css/rooms.css}" href="../static/css/rooms.css/rooms.css/css/rooms.css">
+    <link rel="stylesheet" th:href="@{css/rooms.css}" href="../static/css/rooms.css">
     <title>Rooms</title>
 </head>
 
 <body>
-    <div class="rooms-in-line" th:each="theRoom : ${roomList}">
-        <a th:href="@{'/booking?roomNumber=' + ${theRoom.getNumber()}}"><button class="room-button" th:if="${!theRoom.isBooking() && !theRoom.isInaccessible()}"  id="not-booked"></button></a>
-        <button class="room-button" th:if="${theRoom.isBooking() || theRoom.isInaccessible()}" id="booked"></button>
+
+    <div class="all-rooms">
+        <b class="room-type-heading">STANDARD</b>
+        <br>
+        <div class="rooms-in-line" th:each="theRoom : ${standardRooms}">
+            <a th:href="@{'/booking?roomNumber=' + ${theRoom.getNumber()}}"><button class="room-button" th:if="${!theRoom.isBooking() && !theRoom.isInaccessible()}"  id="not-booked"></button></a>
+            <button class="room-button" th:if="${theRoom.isBooking() || theRoom.isInaccessible()}" id="booked"></button>
+        </div>
+        <hr>
+        <b class="room-type-heading"> BUSINESS</b>
+        <br>
+        <div class="rooms-in-line" th:each="theRoom : ${businessRooms}">
+            <a th:href="@{'/booking?roomNumber=' + ${theRoom.getNumber()}}"><button class="room-button" th:if="${!theRoom.isBooking() && !theRoom.isInaccessible()}"  id="not-booked"></button></a>
+            <button class="room-button" th:if="${theRoom.isBooking() || theRoom.isInaccessible()}" id="booked"></button>
+        </div>
+        <hr>
+        <b class="room-type-heading">LUX</b>
+        <br>
+        <div class="rooms-in-line" th:each="theRoom : ${luxRooms}">
+            <a th:href="@{'/booking?roomNumber=' + ${theRoom.getNumber()}}"><button class="room-button" th:if="${!theRoom.isBooking() && !theRoom.isInaccessible()}"  id="not-booked"></button></a>
+            <button class="room-button" th:if="${theRoom.isBooking() || theRoom.isInaccessible()}" id="booked"></button>
+        </div>
+        <hr>
+        <b class="room-type-heading">ROYAL</b>
+        <br>
+        <div class="rooms-in-line" th:each="theRoom : ${royalRooms}">
+            <a th:href="@{'/booking?roomNumber=' + ${theRoom.getNumber()}}"><button class="room-button" th:if="${!theRoom.isBooking() && !theRoom.isInaccessible()}"  id="not-booked"></button></a>
+            <button class="room-button" th:if="${theRoom.isBooking() || theRoom.isInaccessible()}" id="booked"></button>
+        </div>
     </div>
 
 
