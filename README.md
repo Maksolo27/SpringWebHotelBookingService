@@ -5,3 +5,4 @@
 - Spring Data Jpa
 - Lombok
 - Mysql
+- Html/Css
