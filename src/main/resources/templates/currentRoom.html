@@ -25,7 +25,7 @@
         <buttont>Price:</buttont>
         <button type="button" th:text="${room.getPrice()}">name</button>
         <hr>
-        <button th:href="'/booking?roomNumber=' + ${room.getNumber()}" class="order-button">Order</button>
+        <a th:href="@{'/booking?roomNumber=' + ${room.getNumber()}}" ><button class="order-button">Order</button></a>
 
 
 </body>
