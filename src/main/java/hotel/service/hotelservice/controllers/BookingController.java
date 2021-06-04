@@ -39,7 +39,7 @@ public class BookingController {
         roomService.update(updateRoom);
         customer.setRoomId(roomNumber);
         customerService.add(customer);
-        return "/greetings";
+        return "/greeting";
     }
 
 }
