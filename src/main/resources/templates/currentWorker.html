@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" th:href="@{css/currentRooms.css}" href="../static/css/currentRooms.css">
+  <title>Worker</title>
+
+</head>
+<body>
+    <b>firstname: </b>
+    <b th:text="${worker.getFirstName()}"></b>
+    <br>
+    <b>lastname: </b>
+    <b th:text="${worker.getLastName()}"></b>
+    <br>
+    <b>phone: </b>
+    <b th:text="${worker.getPhone()}"></b>
+    <br>
+    <b>position: </b>
+    <b th:text="${worker.getPosition()}"></b>
+    <br>
+</body>
+</html>

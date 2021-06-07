@@ -28,6 +28,10 @@ public class Staff {
     @Column
     private String phone;
 
+    @Column(name = "position")
+    @Enumerated(value = EnumType.STRING)
+    private Position position;
+
     @Column(name = "number_id")
     private int roomId;
 }

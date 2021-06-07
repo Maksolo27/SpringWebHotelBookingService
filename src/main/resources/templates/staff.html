@@ -13,9 +13,13 @@
   <b class="room-type-heading">STAFF</b>
   <br>
   <div class="rooms-in-line" th:each="theStaff : ${staffList}">
-    <button th:text="${theStaff.getFirstName()}">firstName</button>
-    <br>
+    <a th:href="@{'/currentWorker?id=' + ${theStaff.getId()}}">
+    <button>Lastname: </button>
     <button th:text="${theStaff.getLastName()}">lastName</button>
+    <br>
+    <button>Position: </button>
+    <button th:text="${theStaff.getPosition()}">position</button>
+    </a>
     <br>
   </div>
   <hr>
