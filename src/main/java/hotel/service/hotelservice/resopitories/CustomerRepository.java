@@ -13,4 +13,6 @@ public interface CustomerRepository extends JpaRepository<Customer, Integer>, Cr
     Customer getByPhone(String phone);
 
     Customer getByLogin(String login);
+
+
 }
