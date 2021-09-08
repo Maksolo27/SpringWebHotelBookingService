@@ -25,6 +25,7 @@ public class RoomsController {
         List<Room> businessRooms = new ArrayList<>();
         List<Room> luxRooms = new ArrayList<>();
         List<Room> royalRooms = new ArrayList<>();
+        List<Room> hardLuxRooms = new ArrayList<>();
         for (int i = 0; i < roomList.size(); i++) {
             switch (roomList.get(i).getRoomClass()){
                 case STANDARD:
@@ -39,12 +40,16 @@ public class RoomsController {
                 case ROYAL:
                     royalRooms.add(roomList.get(i));
                     break;
+                case HARD_LUX:
+                    hardLuxRooms.add(roomList.get(i));
+                    break;
             }
         }
         model.addAttribute("standardRooms", standardRooms);
         model.addAttribute("businessRooms", businessRooms);
         model.addAttribute("luxRooms", luxRooms);
         model.addAttribute("royalRooms", royalRooms);
+        model.addAttribute("hardLuxRooms", hardLuxRooms);
         return "rooms";
     }
 }

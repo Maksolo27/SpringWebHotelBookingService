@@ -1,5 +1,5 @@
 package hotel.service.hotelservice.entities;
 
 public enum RoomClass {
-    LUX, ROYAL, STANDARD, BUSINESS
+    LUX, ROYAL, STANDARD, BUSINESS, HARD_LUX;
 }

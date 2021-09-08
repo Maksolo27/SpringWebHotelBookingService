@@ -27,7 +27,6 @@ public class BookingController {
 
     @GetMapping
     public String getForm(Model model, @RequestParam Integer roomNumber){
-        System.out.println("get");
         this.roomNumber = roomNumber;
         return "booking";
     }

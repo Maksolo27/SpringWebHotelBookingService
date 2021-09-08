@@ -39,6 +39,14 @@
             <a th:href="@{'/currentRoom?number=' + ${theRoom.getNumber()}}"><button class="room-button" th:if="${!theRoom.isBooking() && !theRoom.isInaccessible()}"  id="not-booked"></button></a>
             <button class="room-button" th:if="${theRoom.isBooking() || theRoom.isInaccessible()}" id="booked"></button>
         </div>
+        <br>
+        <hr>
+        <b class="room-type-heading">HARD LUX</b>
+        <br>
+        <div class="rooms-in-line" th:each="theRoom : ${hardLuxRooms}">
+            <a th:href="@{'/currentRoom?number=' + ${theRoom.getNumber()}}"><button class="room-button" th:if="${!theRoom.isBooking() && !theRoom.isInaccessible()}"  id="not-booked"></button></a>
+            <button class="room-button" th:if="${theRoom.isBooking() || theRoom.isInaccessible()}" id="booked"></button>
+        </div>
     </div>
 
 
